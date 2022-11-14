@@ -1,0 +1,56 @@
+---
+title: "Dubois Theme and Palettes"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Dubois Theme and Palettes}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(modthemes)
+library(tidyverse)
+```
+
+## Using Dubois Theme and Palettes
+
+This is a basic example of the Dubois Theme and palette.
+```{r example}
+mtcars <- mtcars
+
+ggplot(mtcars, aes(x = as.factor(cyl), y = mpg, fill = as.factor(cyl))) + 
+  geom_bar(stat = "identity") + 
+  scale_fill_manual("cyl", values = modthemes::dubois_palette_short) + 
+  labs(title = "An example of the DuBois theme and palette",
+       subtitle = "Using the default font and background",
+       x = "cyl",
+       y = "mpg",
+       caption = "Data: mtcars") + 
+  theme_dubois()
+```
+
+
+Base family and background fill can be changed via the ```base_family``` and ```bg_fill``` arguments.
+
+```{r example}
+mtcars <- mtcars
+
+ggplot(mtcars, aes(x = as.factor(cyl), y = mpg, fill = as.factor(cyl))) + 
+  geom_bar(stat = "identity") + 
+  scale_fill_manual("cyl", values = modthemes::dubois_palette_short) + 
+  labs(title = "An example of the DuBois theme and palette",
+       subtitle = "Using a different font and background",
+       x = "cyl",
+       y = "mpg",
+       caption = "Data: mtcars") + 
+  theme_dubois(base_family = "Montserrat",
+               bg_fill = "white")
+```
+
