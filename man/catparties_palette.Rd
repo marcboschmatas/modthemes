@@ -5,7 +5,7 @@
 \alias{catparties_palette}
 \title{catparties_palette}
 \format{
-An object of class \code{character} of length 16.
+An object of class \code{character} of length 19.
 }
 \usage{
 catparties_palette

@@ -10,7 +10,8 @@ catparties_palette <- c("PSC" = "#E73B39", "ERC" = "#FFB232", "JxS" = "#3AB6A5",
                         "ICV.EUIA" = "#009966", "CiU" = "#18307B", "JxCat" = "#ED5975",
                         "Junts" = "#00C3B2", "Solidaritat" = "#DB0828", "Democràcia i Llibertat" = "#212765", 
                         "Demòcrates" = "#1475cf", "En Comú Podem" = "#6E236E", "Barcelona en Comú" = "#E65C56",
-                        "Vox" = "#63BE21")
+                        "Vox" = "#63BE21", "Catalunya en Comú Podem" = "#C3113B", "Catalunya en Comú" = "#611b70",
+                        "Catalunya Sí que es Pot" = "#C3113B")
 
 #' @export
 color_psc <- "#E73B39"
@@ -64,4 +65,13 @@ color_bec <- "#E65C56"
 color_vox <- "#63BE21"
 
 
+#' @export
+color_catalunyaecp <- "#C3113B"
+
+
+#' @export
+color_catencomu <- "#611b70"
+
+#' @export
+color_catsiqueespot <- "#C3113B"
 

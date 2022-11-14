@@ -11,8 +11,7 @@ library(ggplot2)
 theme_dubois <- function(base_size = 11,
                          base_family = "Roboto Condensed",
                          base_line_size = base_size / 170,
-                         base_rect_size = base_size / 170, 
-                         legend_title=element_blank(),
+                         base_rect_size = base_size / 170,
                          legend_position = NULL,
                          bg_fill = "antiquewhite1"){
   theme_minimal(base_size = base_size, 
@@ -20,7 +19,6 @@ theme_dubois <- function(base_size = 11,
                 base_line_size = base_line_size) %+replace%
     theme(plot.background=element_rect(fill=bg_fill),
           plot.margin=unit(c(5,5,5,5),"mm"),
-          legend.title = legend_title,
           legend.position = legend_position,
           legend.background = element_blank(),
           legend.key = element_blank(),

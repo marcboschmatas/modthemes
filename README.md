@@ -5,7 +5,7 @@
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
-The goal of modthemes is to collect a series of resources for plotting with {ggplot2}. Its objectives are, on the one hand, provide help for recreating modernist aesthetics (Think WEB DuBois, Le Corbusier...) in plotting and, on the other hand, provide any other useful resource for plotting. In the future, {tmap} resources will be incorporated. Very much Work in Progress.
+The goal of modthemes is to collect a series of resources for plotting with {ggplot2}. Its objectives are, on the one hand, provide help for recreating modernist aesthetics (Think WEB DuBois, Le Corbusier...) in plotting and, on the other hand, provide any other useful resource for plotting. In the future, {tmap} resources will be incorporated.
 
 So far, it consists of the following.
 
@@ -25,7 +25,7 @@ You can install the development version of modthemes from [GitHub](https://githu
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("marcboschmatas/modthemes")
+devtools::install_github("marcboschmatas/dubois")
 ```
 
 

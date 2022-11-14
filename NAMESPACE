@@ -2,6 +2,9 @@
 
 export(catparties_palette)
 export(color_bec)
+export(color_catalunyaecp)
+export(color_catencomu)
+export(color_catsiqueespot)
 export(color_ciu)
 export(color_cs)
 export(color_cup)

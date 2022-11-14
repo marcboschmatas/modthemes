@@ -9,7 +9,6 @@ theme_dubois(
   base_family = "Roboto Condensed",
   base_line_size = base_size/170,
   base_rect_size = base_size/170,
-  legend_title = element_blank(),
   legend_position = NULL,
   bg_fill = "antiquewhite1"
 )
