@@ -25,7 +25,7 @@ You can install the development version of modthemes from [GitHub](https://githu
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("marcboschmatas/dubois")
+devtools::install_github("marcboschmatas/modthemes")
 ```
 
 
