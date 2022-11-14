@@ -33,7 +33,7 @@ catparties_palette
 This palette can be used for plotting in {ggplot2} or (unnaming it), {tmap}
 
 
-```{r plot example}
+```{r plot example, fig.height = 5, fig.width = 7}
 
 elections_2017 <- data.frame(
   stringsAsFactors = FALSE,

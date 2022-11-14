@@ -22,7 +22,7 @@ library(tidyverse)
 ## Using Dubois Theme and Palettes
 
 This is a basic example of the Dubois Theme and palette.
-```{r example}
+```{r example, fig.height = 7, fig.width = 7}
 mtcars <- mtcars
 
 ggplot(mtcars, aes(x = as.factor(cyl), y = mpg, fill = as.factor(cyl))) + 
@@ -39,7 +39,7 @@ ggplot(mtcars, aes(x = as.factor(cyl), y = mpg, fill = as.factor(cyl))) +
 
 Base family and background fill can be changed via the ```base_family``` and ```bg_fill``` arguments.
 
-```{r example}
+```{r example2, fig.height = 7, fig.width = 7}
 mtcars <- mtcars
 
 ggplot(mtcars, aes(x = as.factor(cyl), y = mpg, fill = as.factor(cyl))) + 
