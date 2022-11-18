@@ -10,7 +10,7 @@ The goal of modthemes is to collect a series of resources for plotting with {ggp
 So far, it consists of the following.
 
 ### theme_dubois()
-This ggplot2 theme, inspired by https://github.com/ddekadt/dubois_theme/blob/main/theme_dubois.R and https://raw.githubusercontent.com/ajstarks/dubois-data-portraits/master/dubois-style.pdf seeks to recreate the style of WEB DuBois in plotting with ggplot.
+This ggplot2 theme, inspired by https://github.com/ddekadt/dubois_theme/blob/main/theme_dubois.R and https://raw.githubusercontent.com/ajstarks/dubois-data-portraits/master/dubois-style.pdf seeks to recreate the style of WEB DuBois in plotting with ggplot. Based on ```ggplot2::theme_minimal()```  It has a variant ```theme_dubois_classic``` based on ```ggplot2::theme_classic()```. 
 
 ### DuBois palettes
 A series of colours and colour combinations to be used either in plots using ```theme_dubois()``` or on its own.
@@ -18,6 +18,15 @@ Also inspired by https://github.com/ddekadt/dubois_theme/blob/main/theme_dubois.
 
 ### catparties_palette
 A named vector containing the official colours of main Catalan political parties.
+
+### palette_bloc
+A palette consisting of brown/brick colours.
+
+### contrasting_palette
+A palette of muted diverging colours (beige, blues, browns, greens)
+
+### steel_palette
+A palette of steel blue colours.
 
 ## Installation
 
