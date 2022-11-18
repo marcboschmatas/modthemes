@@ -1,6 +1,6 @@
 library(ggplot2)
-#' @title theme_dubois
-#' @description ggplot theme in the style of WEB DuBois
+#' @title theme_dubois_classic
+#' @description ggplot theme in the style of WEB DuBois without any grid
 #' @param base_size font size to use
 #' @param base_family font family to use
 #' @param base_line_size equal to the param in theme_minimal
@@ -8,25 +8,24 @@ library(ggplot2)
 #' @param legend_position equal to the param in theme
 #' @param bg_fill background colour
 #' @export
-theme_dubois <- function(base_size = 11,
+theme_dubois_classic <- function(base_size = 11,
                          base_family = "Roboto Condensed",
                          base_line_size = base_size / 170,
                          base_rect_size = base_size / 170,
                          legend_position = NULL,
                          bg_fill = "antiquewhite1"){
-  theme_minimal(base_size = base_size, 
+  theme_classic(base_size = base_size, 
                 base_family = base_family,
                 base_line_size = base_line_size) %+replace%
     theme(plot.background=element_rect(fill=bg_fill),
+          panel.background = element_rect(fill = bg_fill),
+          strip.background = element_rect(fill = bg_fill),
+          panel.border = element_blank(),
+          rect = element_rect(fill = bg_fill),
           plot.margin=unit(c(5,5,5,5),"mm"),
           legend.position = legend_position,
           legend.background = element_blank(),
           legend.key = element_blank(),
-          panel.grid.major = element_line(color="light grey", size=0.65, linetype=1),
-          panel.grid.minor = element_line(color="light grey", size=0.65, linetype=1),
           plot.title=element_text(hjust= 0.5, margin=margin(0,0,10,0), size=15),
           plot.subtitle=element_text(hjust= 0.5, margin=margin(0,0,30,0), size=10))
 }
-
-
-

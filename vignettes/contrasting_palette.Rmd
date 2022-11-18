@@ -1,0 +1,37 @@
+---
+title: "Contrasting palette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Contrasting palette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(modthemes)
+library(tidyverse)
+```
+
+
+This palette is useful for qualitative variables. It offers a range of blue, brown and green tones.
+
+```{r, fig.height = 7, fig.width = 7}
+mtcars |> 
+  mutate(brand = str_extract(row.names(mtcars), "\\w*(?= )")) |> 
+  filter(brand %in% c("Fiat","Hornet","Mazda","Toyota","Merc","Ferrari")) |> 
+  ggplot(aes(x = mpg, y = hp, colour = brand)) + 
+  geom_point(size = 3) + 
+  scale_colour_manual("brand", values = modthemes::contrasting_palette) + 
+  theme_minimal(base_family = "Roboto condensed") + 
+  labs(title = "Contrasting palette",
+       subtitle = "A diverging palette for qualitative variables",
+       caption = "Data: mtcars")
+```
+

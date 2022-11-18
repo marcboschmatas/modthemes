@@ -1,0 +1,50 @@
+---
+title: "Palette Bloc"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Palette Bloc}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(modthemes)
+library(ggplot2)
+```
+
+
+This palette is inspired by the colours of Casa Bloc. It can work as a discrete and continuous palette
+
+![source: Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/f/f0/05_Casa_Bloc.jpg)
+
+
+
+```{r, fig.height = 7, fig.width = 7}
+ggplot(mtcars, aes(x = mpg, y = hp, colour = as.factor(cyl))) + 
+  geom_point(size = 2) + 
+  scale_colour_manual("cyl", values = modthemes::palette_bloc) + 
+  theme_minimal(base_family = "Roboto condensed") + 
+  labs(title = "Bloc palette",
+       subtitle = "A browns palette inspired in values found in Casa Bloc")
+```
+
+
+```{r, fig.height = 7, fig.width = 7}
+ggplot(mtcars, aes(x = mpg, y = hp, colour = wt)) + 
+  geom_point(size = 2) + 
+  scale_colour_gradientn(colours = modthemes::palette_bloc) + 
+  theme_minimal(base_family = "Roboto condensed") + 
+  labs(title = "Bloc palette",
+       subtitle = "A browns palette inspired in values found in Casa Bloc")
+```
+
+
+
+
